@@ -19,7 +19,7 @@ For more details, please refer to the [full license text](https://creativecommon
 ## Environment
 You can use the following command to install the environment.
 ```bash
-conda create -n helixprotx python=3.7
+conda create -n helixprotx python=3.8
 conda activate helixprotx
 python install -r requirements.txt
 ```
@@ -35,4 +35,4 @@ python inference.py
 - model.py: model definition
 - model_config.py: model config classes
 - build_model.py: create a HelixProtX model checkpoint
-- inference.py: run inference with a HelixProtX checkpoint
+- inference.py: inference code

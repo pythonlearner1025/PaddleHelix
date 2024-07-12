@@ -1,11 +1,11 @@
 [English](README.md) | 简体中文
 # Unifying Sequences, Structures, and Descriptions for Any-to-Any Protein Generation with the Large Multimodal Model HelixProtX
-<!-- 本仓库包含我们的[论文工作](https://arxiv.org/abs/2310.13913)代码实现。 -->
 
-蛋白质是生物系统的基本组成部分，可以通过各种模态来表示，包括序列、结构和文本描述。理解这些模态直接的相互关系对蛋白质研究至关重要。当前对蛋白质研究的深度学习方法主要侧重于有限的专门任务——通常从一种蛋白质模态预测另一种蛋白质模态。这些方法限制了对多模态蛋白质数据的理解和生成。
+
+蛋白质是生物系统的基本组成部分，可以通过各种模态来表示，包括序列、结构和文本描述。理解这些模态之间的相互关系对蛋白质研究至关重要。当前对蛋白质研究的深度学习方法主要侧重于有限的专门任务——通常从一种蛋白质模态预测另一种蛋白质模态。这些方法限制了对多模态蛋白质数据的理解和生成。
 
 HelixProtX允许将任何输入蛋白质模态转化为任何所需的蛋白质模态。
-HelixProtX 在一系列与蛋白质相关的任务中始终保持卓越的准确性，优于现有的最先进模型。
+HelixProtX在一系列与蛋白质相关的任务中始终保持卓越的准确性，优于现有的sota模型。
 
 
 
@@ -27,7 +27,7 @@ HelixProtX 在一系列与蛋白质相关的任务中始终保持卓越的准确
 ## 安装
 你可以使用以下命令来安装环境。
 ```bash
-conda create -n helixprotx python=3.7
+conda create -n helixprotx python=3.8
 conda activate helixprotx
 python install -r requirements.txt
 ```
@@ -46,5 +46,5 @@ python inference.py
 - model.py: 模型定义
 - model_config.py: model config classes
 - build_model.py: 创建初始化checkpoint，用于展示
-- inference.py: run inference with a HelixProtX checkpoint
+- inference.py: 推理代码
 
