@@ -21,7 +21,6 @@ HelixProtX在一系列与蛋白质相关的任务中始终保持卓越的准确�
 
 如有任何疑问，请参阅 [许可证全文](https://creativecommons.org/licenses/by-nc/4.0/legalcode)。
 
-## 环境
 
 
 ## 安装
