@@ -1,15 +1,3 @@
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-
-This work is licensed under a
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
-
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
-
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
-[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
-[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
-
-
 English | [简体中文](README_cn.md)
 
 <p align="center">
@@ -116,15 +104,22 @@ We also provide [examples](./apps) that implement various algorithms and show th
   - [HelixFold-Single](./apps/protein_folding/helixfold-single)
 
 ### Competition Solutions
-PaddleHelix team participated in multiple competitions related to bio-computing. The solutions can be found [here](./competition).
+The PaddleHelix team participated in multiple competitions related to bio-computing. The solutions can be found [here](./competition).
 
 ### Guide for Developers
-* To develope new functions based on the source code of PaddleHelix, please refer to [guide for developers](./developer_guide.md).
-* For more details of the APIs, please refer to the [documents](https://paddlehelix.readthedocs.io/en/dev/).
+* To develop new functions based on the source code of PaddleHelix, please refer to [guide for developers](./developer_guide.md).
+* For more details on the APIs, please refer to the [documents](https://paddlehelix.readthedocs.io/en/dev/).
 
 ------
 
-## Welcome to Join Us
-We are looking for machine learning researchers / engineers or bioinformatics / computational chemistry researchers interested in AI-driven drug design.
-We base in Shenzhen or Shanghai, China.
-Please send the resumes to wangfan04@baidu.com or fangxiaomin01@baidu.com.
+## Copyright and License
+Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
