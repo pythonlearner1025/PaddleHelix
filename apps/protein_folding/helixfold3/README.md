@@ -157,7 +157,7 @@ tool hits that were used to construct the input MSA.
 
 ## Copyright
 
-HelixFold3's code and parameters are available under the (FIXME CC) License for non-commercial use only, please check the details in (FIXME ./LICENSE) brefore using HelixFold3.
+HelixFold3's code and model parameters are available under the (FIXME CC) License for non-commercial use by individuals or non-commercial organizations only. Please check the details in (FIXME ./LICENSE) brefore using HelixFold3.
 
 ## Reference
 
