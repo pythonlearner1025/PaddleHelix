@@ -1,7 +1,7 @@
 # [HelixFold3](./Report_HelixFold3.pdf): An Implementation of [AlphaFold 3](https://doi.org/10.1038/s41586-024-07487-w) using [PaddlePaddle](https://github.com/paddlepaddle/paddle)
 
 The AlphaFold series has transformed protein structure prediction with remarkable accuracy, often matching experimental methods. While [AlphaFold2](https://doi.org/10.1038/s41586-021-03819-2) and [AlphaFold-Multimer](https://www.biorxiv.org/content/10.1101/2021.10.04.463034v1) are open-sourced, facilitating rapid and reliable predictions, [AlphaFold3](https://www.nature.com/articles/s41586-024-07487-w) remains partially accessible through a limited [online server](https://alphafoldserver.com/about) and has not been open-sourced, restricting further development.
-To address these challenges, the PaddleHelix team is developing [HelixFold3](./Report_HelixFold3.pdf), aiming to replicate AlphaFold3’s capabilities. Leveraging insights from previous models and extensive datasets, HelixFold3 achieves accuracy comparable to AlphaFold3 in predicting the structure of conventional ligands, nucleic acids, and proteins.
+To address these challenges, the PaddleHelix team is developing [HelixFold3](./Report_HelixFold3.pdf), aiming to replicate AlphaFold3’s capabilities. Leveraging insights from previous models and extensive datasets, HelixFold3 achieves accuracy comparable to AlphaFold3 in predicting the structure of conventional ligands, nucleic acids, and proteins. Please refer to [here](FIXME) for more details on the capabilities of HelixFold3.
 
 <p align="center">
 <img src="images/ligands_posebusters_v1.png" align="left" height="60%" width="25.4%" />
