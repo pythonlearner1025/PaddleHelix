@@ -1,11 +1,11 @@
 #!/bin/bash
 
-PYTHON_BIN="/usr/bin/python3"
-ENV_BIN="/root/miniconda3/bin"
-# MAXIT_SRC="/root/paddlejob/workspace/output/yexianbin/dcu_command/maxit-v11.200-prod-src/"
-MAXIT_SRC="/home/rudder_paddle_home/custom_workspace/init_models/paddlehelix/paddlefold/maxit-v11.100-prod-src"
+PYTHON_BIN="/usr/bin/python3" # changes to your python
+ENV_BIN="/root/miniconda3/bin"  # change to your env
+MAXIT_SRC="PATH/TO/MAXIT/SRC" # changes to your MAXIT
+export OBABEL_BIN="PATH/TO/OBABEL/BIN" # changes to your openbabel
 DATA_DIR="./data"
-export PATH="$MAXIT_SRC/hin:$PATH"
+export PATH="$MAXIT_SRC/bin:$PATH"
 
 CUDA_VISIBLE_DEVICES=0 "$PYTHON_BIN" inference.py \
     --maxit_binary "$MAXIT_SRC/bin/maxit" \
@@ -27,12 +27,13 @@ CUDA_VISIBLE_DEVICES=0 "$PYTHON_BIN" inference.py \
     --template_mmcif_dir "$DATA_DIR/pdb_mmcif/mmcif_files" \
     --obsolete_pdbs_path "$DATA_DIR/pdb_mmcif/obsolete.dat" \
     --ccd_preprocessed_path "$DATA_DIR/ccd_preprocessed_etkdg.pkl.gz" \
-    --rfam_database_path "$DATA_DIR/RNA_MSA_databases/Rfam-14.9_rep_seq.fasta" \
+    --rfam_database_path "$DATA_DIR/Rfam-14.9_rep_seq.fasta" \
     --max_template_date=2020-05-14 \
     --input_json data/demo_6zcy.json \
     --output_dir ./output \
     --model_name allatom_demo \
-    --init_model init_models/helixfold_aa_init_model.pdparams \
-    --infer_times 3 \
+    --init_model init_models/HelixFold3-240814.pdparams \
+    --infer_times 1 \
+    --diff_batch_size 1 \
     --precision "bf16" \
     --no_msa_templ_feats # comment it to enable MSA searching
