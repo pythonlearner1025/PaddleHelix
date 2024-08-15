@@ -12,7 +12,9 @@ English | [简体中文](README_cn.md)
 
 
 ## Latest News
-`2024.05.23` PaddleHelix released the codes of HelixDock, a pre-training model on large-scale generated docking conformations to unlock the potential of protein-ligand structure prediction, significantly improving prediction accuracy and generalizability. Please refer to [paper]([https://arxiv.org/abs/2310.13913) and [codes](./apps/molecular_docking/helixdock) for more details. Welcome to [PaddleHelix website](https://paddlehelix.baidu.com/app/drug/helix-dock/forecast)to try out the structure prediction online service. 
+`2024.08.15` PaddleHelix released the codes and model parameters of HelixFold3, biomolecular structure prediction replicating the capabilities of AlphaFold3. HelixFold3 achieves accuracy comparable to AlphaFold3 in predicting the structures of the conventional ligands, nucleic acids, and proteins. The initial release of HelixFold3 is available as open source on GitHub for academic research, promising to advance biomolecular research and accelerate discoveries. Refer to [codes](./apps/protein_folding/helixfold3) for more details. 
+
+`2024.05.23` PaddleHelix released the codes of HelixDock, a pre-training model on large-scale generated docking conformations to unlock the potential of protein-ligand structure prediction, significantly improving prediction accuracy and generalizability. Please refer to [paper]([https://arxiv.org/abs/2310.13913) and [codes](./apps/molecular_docking/helixdock) for more details. Welcome to [PaddleHelix website](https://paddlehelix.baidu.com/app/drug/helix-dock/forecast) to try out the structure prediction online service. 
 
 `2024.05.13` Paper "Multi-purpose RNA Language Modeling with Motif-aware Pre-training and Type-guided Fine-tuning" is accepted by Nature Machine Intelligence. Please refer to [paper](https://www.nature.com/articles/s42256-024-00836-4) and [codes](https://github.com/CatIIIIIIII/RNAErnie) for more details.
 
