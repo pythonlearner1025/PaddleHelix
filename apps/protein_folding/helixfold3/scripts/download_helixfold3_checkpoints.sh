@@ -19,6 +19,5 @@ BASENAME=$(basename "${SOURCE_URL}")
 
 mkdir --parents "${ROOT_DIR}"
 aria2c "${SOURCE_URL}" --dir="${ROOT_DIR}"
-tar --extract --verbose --file="${ROOT_DIR}/${BASENAME}" \
-  --directory="${ROOT_DIR}" --preserve-permissions
+unzip -o "${ROOT_DIR}/${BASENAME}" -d "${ROOT_DIR}"
 rm "${ROOT_DIR}/${BASENAME}"
