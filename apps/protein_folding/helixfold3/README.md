@@ -233,7 +233,7 @@ We are keen on support longer token inference, it will come in soon.
 
 ## Copyright
 
-HelixFold3's code and model parameters are available under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/),  license for non-commercial use by individuals or non-commercial organizations only. Please check the details in [LICENSE](./LICENSE) before using HelixFold3.
+HelixFold3's code and model parameters are available under the [LICENSE](./LICENSE) for non-commercial use by individuals or non-commercial organizations only. Please check the usage restrictions before using HelixFold3.
 
 ## Reference
 
