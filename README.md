@@ -12,6 +12,8 @@ English | [简体中文](README_cn.md)
 
 
 ## Latest News
+`2024.08.30` We are excited to announce great news! The initial version of the HelixFold3 server, designed for biomolecular structure prediction, is now available on the PaddleHelix website (https://paddlehelix.baidu.com/app/all/helixfold3/forecast). We encourage everyone to explore its capabilities and leverage it for impactful and innovative research.
+
 `2024.08.15` PaddleHelix released the codes and model parameters of HelixFold3, biomolecular structure prediction replicating the capabilities of AlphaFold3. HelixFold3 achieves accuracy comparable to AlphaFold3 in predicting the structures of the conventional ligands, nucleic acids, and proteins. The initial release of HelixFold3 is available as open source on GitHub for non-commercial academic research, promising to advance biomolecular research and accelerate discoveries. Refer to [codes](./apps/protein_folding/helixfold3) for more details. 
 
 `2024.05.23` PaddleHelix released the codes of HelixDock, a pre-training model on large-scale generated docking conformations to unlock the potential of protein-ligand structure prediction, significantly improving prediction accuracy and generalizability. Please refer to [paper]([https://arxiv.org/abs/2310.13913) and [codes](./apps/molecular_docking/helixdock) for more details. Welcome to [PaddleHelix website](https://paddlehelix.baidu.com/app/drug/helix-dock/forecast) to try out the structure prediction online service. 
