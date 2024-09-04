@@ -266,6 +266,8 @@ If you use the code, data, or checkpoints in this repo, please cite the followin
 @article{helixfold3,
   title={Technical Report of HelixFold3 for Biomolecular Structure Prediction},
   author={PaddleHelix Team},
+  journal = {arXiv},
+  doi = {https://doi.org/10.48550/arXiv.2408.16975},
   year={2024}
 }
 ```
