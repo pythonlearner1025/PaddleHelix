@@ -10,7 +10,9 @@
 ![support os](https://img.shields.io/badge/os-linux%2C%20win%2C%20mac-yellow.svg)
 
 ## 最新消息
-`2024.08.30` **我们很高兴地宣布一个好消息！用于生物分子结构预测的初版 HelixFold3 服务器现已在 PaddleHelix 网站 (https://paddlehelix.baidu.com/app/all/helixfold3/forecast) 上线。我们鼓励大家探索其功能，并将其用于有影响力和创新性的研究。**
+`2024.11.08` **为便于用户将HelixFold3集成到工作流程并支持高通量使用，我们推出了便捷的付费API服务([使用指南链接](https://paddlehelix.baidu.com/app/tut/guide/all/helixfold3sdk))，可用于学术和商业用途，可高效使用HelixFold3的结构预测功能。**
+
+`2024.08.30` 我们很高兴地宣布一个好消息！用于生物分子结构预测的初版 HelixFold3 服务器现已在 PaddleHelix 网站 (https://paddlehelix.baidu.com/app/all/helixfold3/forecast) 上线。我们鼓励大家探索其功能，并将其用于有影响力和创新性的研究。
 
 `2024.08.15 ` PaddleHelix发布了HelixFold3的代码和模型参数，该生物分子结构预测复制了AlphaFold3的能力。HelixFold3在预测常规配体、核酸和蛋白质的结构方面达到了与AlphaFold3相当的准确性。HelixFold3的初始版本在GitHub上以开源形式提供，用于非商用的学术研究，有望推进生物分子研究并加速发现。有关更多详细信息，请参阅[codes]（./apps/protein_folding/helixfold3）。
 
