@@ -6,9 +6,9 @@ The PaddleHelix team is working on [HelixFold3](./helixfold3_report.pdf) to repl
 
 The **HelixFold3 server** is available on the [PaddleHelix website](https://paddlehelix.baidu.com/app/all/helixfold3/forecast) and supports two interaction modes:
 
-**1) Visualized interactive interface:** Designed for user-friendly operations, allowing researchers to explore structural predictions intuitively.
+**1) Visualized interactive interface:** Designed for **user-friendly** operations, allowing researchers to explore structural predictions intuitively.
 
-**2) API-based access:** Facilitates high-throughput predictions, suitable for large-scale screening and design workflows.
+**2) API-based access:** Facilitates **high-throughput** predictions, suitable for **large-scale screening and design** workflows.
 
 The **free version** of the HelixFold3 server is restricted to **non-commercial use**, while the **paid version** offers unrestricted usage, enabling **commercial applications**. This flexibility ensures accessibility for academic research while supporting industrial needs with commercial-grade output options.
 
