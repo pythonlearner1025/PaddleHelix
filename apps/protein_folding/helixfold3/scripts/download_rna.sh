@@ -17,5 +17,5 @@ ROOT_DIR="${DOWNLOAD_DIR}/"
 SOURCE_URL="https://paddlehelix.bd.bcebos.com/HelixFold3/MSA/Rfam-14.9_rep_seq.fasta"
 BASENAME=$(basename "${SOURCE_URL}")
 
-mkdir --parents "${ROOT_DIR}"
+mkdir -p "${ROOT_DIR}"
 aria2c "${SOURCE_URL}" --dir="${ROOT_DIR}"

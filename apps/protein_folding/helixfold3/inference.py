@@ -454,10 +454,10 @@ def main(args):
         logger.warning('seed is only used for reproduction')
     init_seed(seed)
 
-
     use_small_bfd = args.preset == 'reduced_dbs'
     setattr(args, 'use_small_bfd', use_small_bfd)
     if use_small_bfd:
+        # 
         assert args.small_bfd_database_path is not None
     else:
         assert args.bfd_database_path is not None
@@ -579,13 +579,20 @@ if __name__ == '__main__':
                         default='/usr/bin/hmmbuild',
                         help='Path to the hmmbuild executable.')
 
+    # active=1 or inactive=0
+    parser.add_argument('--active', type=int,
+                    default=1, required=True,
+                    help='Active or Inactive state.')
+
+
     # binary path of the tool for RNA MSA searching
     parser.add_argument('--nhmmer_binary_path', type=str,
-                        default='/usr/bin/nhmmer',
+                        #default='/usr/bin/nhmmer',
+                        default=None,
                         help='Path to the nhmmer executable.')
     
     parser.add_argument('--uniprot_database_path', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to the Uniprot database for use '
                         'by JackHMMER.')
     parser.add_argument('--pdb_seqres_database_path', type=str,
@@ -593,15 +600,16 @@ if __name__ == '__main__':
                         help='Path to the PDB '
                         'seqres database for use by hmmsearch.')
     parser.add_argument('--uniref90_database_path', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to the Uniref90 database for use '
                         'by JackHMMER.')
     parser.add_argument('--mgnify_database_path', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to the MGnify database for use by '
                         'JackHMMER.')
     parser.add_argument('--bfd_database_path', type=str, default=None,
                         help='Path to the BFD database for use by HHblits.')
+    # TODO change this 
     parser.add_argument('--small_bfd_database_path', type=str, default=None,
                         help='Path to the small version of BFD used '
                         'with the "reduced_dbs" preset.')
@@ -610,18 +618,18 @@ if __name__ == '__main__':
                         'by HHblits.')
     # RNA MSA searching databases
     parser.add_argument('--rfam_database_path', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to the Rfam database for RNA MSA searching.')
     parser.add_argument('--template_mmcif_dir', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to a directory with template mmCIF '
                         'structures, each named <pdb_id>.cif')
     parser.add_argument('--max_template_date', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Maximum template release date to consider. '
                         'Important if folding historical test sets.')
     parser.add_argument('--obsolete_pdbs_path', type=str,
-                        default=None, required=True,
+                        default=None, required=0,
                         help='Path to file containing a mapping from '
                         'obsolete PDB IDs to the PDB IDs of their '
                         'replacements.')
@@ -634,4 +642,10 @@ if __name__ == '__main__':
                         'genetic database config  (full_dbs)')
     parser.add_argument('--maxit_binary', type=str, default=None)
     args = parser.parse_args()
+
+    if args.active == 1:
+        args.small_bfd_database_path = "data/GPCR100.Active"
+    else:
+        args.small_bfd_database_path = "data/GPCR100.Inactive"
+
     main(args)

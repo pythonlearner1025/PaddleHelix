@@ -22,8 +22,8 @@ fi
 
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
-echo "Downloading HelixFold3 checkpoints..."
-bash "${SCRIPT_DIR}/download_helixfold3_checkpoints.sh" "${DOWNLOAD_DIR}"
+#echo "Downloading HelixFold3 checkpoints..."
+#bash "${SCRIPT_DIR}/download_helixfold3_checkpoints.sh" "${DOWNLOAD_DIR}"
 
 if [[ "${DOWNLOAD_MODE}" = reduced_dbs ]] ; then
   echo "Downloading Small BFD..."

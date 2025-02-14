@@ -175,6 +175,7 @@ class DataPipeline:
 
 
     msa_tasks = []
+    # comment out all msa
     """uniref90_out_path = os.path.join(msa_output_dir, 'uniref90_hits.sto')
     jackhmmer_uniref90_result = run_msa_tool(
         msa_runner=self.jackhmmer_uniref90_runner,
@@ -182,7 +183,7 @@ class DataPipeline:
         msa_out_path=uniref90_out_path,
         msa_format='sto',
         use_precomputed_msas=self.use_precomputed_msas,
-        max_sto_sequences=self.uniref_max_hits)"""
+        max_sto_sequences=self.uniref_max_hits)
     msa_tasks.append((
           self.jackhmmer_uniref90_runner,
           input_fasta_path,
@@ -190,19 +191,20 @@ class DataPipeline:
           'sto',
           self.use_precomputed_msas,
           self.uniref_max_hits))
-    """mgnify_out_path = os.path.join(msa_output_dir, 'mgnify_hits.sto')
+    mgnify_out_path = os.path.join(msa_output_dir, 'mgnify_hits.sto')
     jackhmmer_mgnify_result = run_msa_tool(
         msa_runner=self.jackhmmer_mgnify_runner,
         input_fasta_path=input_fasta_path,
         msa_out_path=mgnify_out_path,
         msa_format='sto',
         use_precomputed_msas=self.use_precomputed_msas,
-        max_sto_sequences=self.mgnify_max_hits)"""
+        max_sto_sequences=self.mgnify_max_hits)
     msa_tasks.append((self.jackhmmer_mgnify_runner,                                                                                                     
            input_fasta_path,                                                                                                                    
            os.path.join(msa_output_dir, 'mgnify_hits.sto'),                                                                                  
            'sto',                                                                                                                               
            self.use_precomputed_msas))
+    """ 
 
     if self._use_small_bfd:
       msa_tasks.append((

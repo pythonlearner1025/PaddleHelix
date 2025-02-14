@@ -29,11 +29,12 @@ CUDA_VISIBLE_DEVICES=0 "$PYTHON_BIN" inference.py \
     --obsolete_pdbs_path "$DATA_DIR/pdb_mmcif/obsolete.dat" \
     --ccd_preprocessed_path "$DATA_DIR/ccd_preprocessed_etkdg.pkl.gz" \
     --rfam_database_path "$DATA_DIR/Rfam-14.9_rep_seq.fasta" \
+    --active 1 \
     --max_template_date=2020-05-14 \
     --input_json data/demo_6zcy.json \
     --output_dir ./output \
     --model_name allatom_demo \
-    --init_model init_models/HelixFold3-240814.pdparams \
-    --infer_times 1 \
+    --init_models data/params/HelixFold3-params-240814.zip \
+    --infer_times 5 \
     --diff_batch_size 1 \
     --precision "fp32"

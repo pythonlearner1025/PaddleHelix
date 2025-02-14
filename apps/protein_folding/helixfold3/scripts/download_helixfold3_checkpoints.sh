@@ -17,7 +17,7 @@ ROOT_DIR="${DOWNLOAD_DIR}/params"
 SOURCE_URL="https://paddlehelix.bd.bcebos.com/HelixFold3/params/HelixFold3-params-240814.zip"
 BASENAME=$(basename "${SOURCE_URL}")
 
-mkdir --parents "${ROOT_DIR}"
+mkdir -p "${ROOT_DIR}"
 aria2c "${SOURCE_URL}" --dir="${ROOT_DIR}"
 unzip -o "${ROOT_DIR}/${BASENAME}" -d "${ROOT_DIR}"
 rm "${ROOT_DIR}/${BASENAME}"

@@ -8,3 +8,5 @@ internal*
 */internal*
 .DS_Store
 */.DS_Store
+
+apps/protein_folding/helixfold3/data/params
